@@ -1,6 +1,6 @@
 import { pgTable, text, uuid, varchar } from "drizzle-orm/pg-core";
 import { timestamps } from "../helpers/column.helpers";
-import { users as user } from "./better-auth/user.sql";
+import { user } from "./better-auth/user.sql";
 import { relations } from "drizzle-orm";
 
 export const posts = pgTable("posts", {
